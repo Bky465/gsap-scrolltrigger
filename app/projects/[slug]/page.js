@@ -2,23 +2,25 @@ import React from 'react'
 import ProjectList from '@/src/components/ProjectList'
 import { projects } from '@/src/data'
 
-const page = ({ params }) => {
+// This generates all possible static paths during build time
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }))
+}
+
+const Page = ({ params }) => {
   const { slug } = params
 
   const currentIndex = projects.findIndex((p) => p.slug === slug)
 
-  // Handle if slug is not found
   if (currentIndex === -1) {
     return <div>Project not found.</div>
   }
 
   const project = projects[currentIndex]
-
-  const nextIndex = (currentIndex + 1) % projects.length
-  const prevIndex = (currentIndex - 1 + projects.length) % projects.length
-
-  const nextProject = projects[nextIndex]
-  const prevProject = projects[prevIndex]
+  const nextProject = projects[(currentIndex + 1) % projects.length]
+  const prevProject = projects[(currentIndex - 1 + projects.length) % projects.length]
 
   return (
     <ProjectList
@@ -29,4 +31,4 @@ const page = ({ params }) => {
   )
 }
 
-export default page
+export default Page

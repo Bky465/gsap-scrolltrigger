@@ -2,11 +2,10 @@
   "name": "page_transitions",
   "version": "0.1.0",
   "private": true,
- "scripts": {
+"scripts": {
   "dev": "next dev",
   "build": "next build",
-  "export": "next export",
-  "deploy": "npm run build && npm run export && touch out/.nojekyll && git add out && git commit -m \"Deploy to GitHub Pages\" && git subtree push --prefix out origin gh-pages"
+  "deploy": "npm run build && touch out/.nojekyll && git add out && git commit -m \"Deploy to GitHub Pages\" && git subtree push --prefix out origin gh-pages"
 },
   "dependencies": {
     "gsap": "^3.12.7",
