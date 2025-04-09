@@ -10,7 +10,7 @@ export const projects=[
         id:1,
         slug:'mushtang',
         title:'Classic 90s Mustang',
-        description:"Step back into the golden era of Odisha automotive spirit with the iconic 90s Mustang. Its unmistakable muscular stance, aggressive front grille, and legendary roar of the powerful V8 engine are instant throwbacks to an era when raw horsepower and sleek design ruled the streets. Equipped with a distinctive body shape, vibrant colors, and signature interior styling that blends sportiness and comfort, this Mustang isn't just a car—it's a time machine.",
+        description:"Step back into  automotive spirit with the iconic 90s Mustang. Its unmistakable muscular stance, aggressive front grille, and legendary roar of the powerful V8 engine are instant throwbacks to an era when raw horsepower and sleek design ruled the streets. Equipped with a distinctive body shape, vibrant colors, and signature interior styling that blends sportiness and comfort, this Mustang isn't just a car—it's a time machine.",
         images:['/mushtang-1.jpg','/mushtang-2.jpg', '/mushtang-3.jpg', '/mushtang-4.jpg'],
     },
     {
