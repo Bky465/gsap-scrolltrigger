@@ -2,8 +2,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
-    images: { unoptimized: true } // necessary if you're using next/image
+    images: { unoptimized: true },
   }
   
-  module.exports = nextConfig
-  
+export default nextConfig  
